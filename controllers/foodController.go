@@ -35,9 +35,9 @@ func GetFoods() gin.HandlerFunc {
 
 func GetFood() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		var ctx, cancel = context.WithTimeout(context.Background(), 100*time.Second)
-		var foods models.Food
-		err := foodCollection.Find(ctx)
+		// var ctx, cancel = context.WithTimeout(context.Background(), 100*time.Second)
+		// var foods models.Food
+		// err := foodCollection.Find(ctx)
 	}
 }
 
@@ -53,10 +53,10 @@ func UpdateFood() gin.HandlerFunc {
 	}
 }
 
-func round(num float64) int {
+// func round(num float64) int {
 
-}
+// }
 
-func toFixed(num float64, precision int) float64 {
+// func toFixed(num float64, precision int) float64 {
 
-}
+// }
